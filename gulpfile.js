@@ -6,10 +6,11 @@ const server = require('gulp-server-livereload')
 
 const config = {
   host: 'localhost',
-  port: 4200
+  port: 3001
 }
 
 gulp.task('live-reload', () => {
+
   gulp.src('').pipe(server({
     host: config.host,
     port: config.port,
@@ -18,6 +19,7 @@ gulp.task('live-reload', () => {
     directoryListing: false,
     open: true
   }))
+  
 })
 
 gulp.task('default', ['live-reload'])
