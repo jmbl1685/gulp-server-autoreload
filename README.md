@@ -9,7 +9,7 @@
 
 const config = {
   host: 'localhost',
-  port: 4200
+  port: 3001
 }
 ```
 
